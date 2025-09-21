@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.75;
+  font-weight: bold;
+}
+
+.card {
+  padding: 2px;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.card-component {
+  text-align: left;
+  padding: 5px;
+  font-size: small;
+}
+
+h2 {
+  font-size: small;
+}
+
+.main-container {
+  display:flex;
+}
+.high-rating{
+  color: rgb(0,255,0);
+}
+.low-rating{
+  color:rgb(255,0,0)
+}
