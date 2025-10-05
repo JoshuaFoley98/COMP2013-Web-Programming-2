@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 function getRandomNumber(squares){
     return Math.floor(Math.random() * squares)
 }
@@ -7,6 +8,8 @@ function getRandomNumber(squares){
 export default function ColorBox( {color, index}){
     const squares = 25;
     const [randomNumber, setRandomNumber] = useState(getRandomNumber(squares))
+    
+    randomNumber 
    return( 
    <div 
         className="ColorBox" 
@@ -14,6 +17,6 @@ export default function ColorBox( {color, index}){
         
         onClick={() => setRandomNumber(getRandomNumber(squares))}
         style={{backgroundColor: color[randomNumber]}}
-        ></div> 
+        > <p  style={{color: color[randomNumber], display: ((randomNumber=== 15)? "block" : "none")}}>🐢</p></div> 
     )
 }
